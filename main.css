@@ -287,9 +287,15 @@ h6 {font-size: 16px}
     ;
 }
 
+.slider {
+    display: flex;
+    flex-direction: column;
+    grid-area: project-images;
+    align-items: center; 
+}
+
 .project-images {
     box-sizing: border-box;
-    grid-area: project-images;
     width: 700px;
     height: 350px;
     border-radius: 4px;
@@ -301,6 +307,35 @@ h6 {font-size: 16px}
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.picture-select {
+    margin: 25px 0px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-button {
+    border: 2px solid var(--borderColor);
+    width: 30px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.select-button:hover {
+    background-color: var(--mainColor);
+}
+
+.checked {
+    background-color: var(--mainColor);
 }
 
 .left-column {
