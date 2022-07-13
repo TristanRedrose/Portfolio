@@ -50,6 +50,7 @@ a {
 
 ul {
     list-style: none;
+    padding: 0px;
 }
 
 h1 {font-size: 56px}
@@ -200,7 +201,7 @@ h6 {font-size: 16px}
     font-family: 'Roboto Slab', serif;
 }
 
-#skills {
+#skills, #project-skills {
     display: flex;
     justify-content: space-evenly;
     background-color: var(--mainColor);
@@ -240,8 +241,134 @@ h6 {font-size: 16px}
     color: #fff;
 }
 
+.modal-shadow {
+    position: fixed;
+    z-index: 9;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.modal-container {
+    width: 1200px;
+    height: 650px;
+    overflow: auto;
+    background-color: var(--mainColor);
+    border: 2px solid var(--borderColor);
+    border-radius: 8px;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    z-index: 10;
+}
+
+#close-button {
+    position: fixed;
+    right: 0px;
+    color: aqua;
+    margin: 16px 16px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.modal-wrapper {
+    padding: 50px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'project-images project-images'
+    'left-column right-column'
+    ;
+}
+
+.project-images {
+    box-sizing: border-box;
+    grid-area: project-images;
+    width: 700px;
+    height: 350px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid var(--borderColor);
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left-column {
+    grid-area: left-column;
+    min-height: 350px;
+}
+
+.right-column {
+    grid-area: right-column;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#project-skills {
+    background-color: var(--secondaryColor);
+    width: 300px;
+}
+
+
+.link-wrapper {
+    margin-top: 75px;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+#video, #page, #code {
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 8px 16px;
+    color: white;
+    border: 2px var(--borderColor);
+}
+
+#video {
+    background-color: #F50057;
+}
+
+#page {
+    background-color: silver;
+    color: black;
+}
+
+#code {
+    background-color: navy;
+}
+
 @media screen and (max-width: 1220px) {
-    .main-container {
+    .main-container,.modal-container {
         width: 95%;
     }
+}
+
+@media screen and (max-width: 900px) {
+    .modal-wrapper {
+        grid-template-areas: 
+        'project-images project-images'
+        'left-column left-column'
+        'right-column right-column'
+        ;
+    }
+
+    .project-images {
+        width: 500px;
+        height: 250px;
+    }
+
 }
