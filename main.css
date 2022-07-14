@@ -177,6 +177,10 @@ h6 {font-size: 16px}
     margin: 20px 0px;
 }
 
+.modal-button {
+    cursor: pointer;
+}
+
 .skills-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
@@ -241,29 +245,28 @@ h6 {font-size: 16px}
     color: #fff;
 }
 
-.modal-shadow {
+.modal {
     position: fixed;
-    z-index: 9;
     left: 0px;
     top: 0px;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    
+    display: none;
 }
 
 .modal-container {
+    position: fixed;
     width: 1200px;
     height: 650px;
     overflow: auto;
     background-color: var(--mainColor);
     border: 2px solid var(--borderColor);
     border-radius: 8px;
-    position: fixed;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -55%);
-    z-index: 10;
+    display: none;
 }
 
 #close-button {
@@ -367,7 +370,7 @@ h6 {font-size: 16px}
 
 #video, #page, #code {
     box-sizing: border-box;
-    border-radius: 16px;
+    border-radius: 12px;
     padding: 8px 16px;
     color: white;
     border: 2px var(--borderColor);
