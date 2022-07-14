@@ -59,10 +59,64 @@ modalButtons.forEach(button => {
                     </div>
                 </div>
             </div>
-            `;
-            container.className = "modal-container active";
-            imageSlider();
+            `;    
         }
+        if (button.dataset.id === "movies") {
+            modal.className = "modal active";
+            container.innerHTML = `
+            <div id="close-button">Return...</div>
+            <h3 class="title-text">MyFavMovies</h3>
+            <div class="modal-wrapper">
+                <div class="slider">
+                    <div class="project-images">
+                        <img class="slide-image active" src="images/movies/movies-1.png" alt="slide-image">
+                        <img class="slide-image" src="images/movies/movies-2.png" alt="slide-image">
+                        <img class="slide-image" src="images/movies/movies-3.png" alt="slide-image">
+                        <img class="slide-image" src="images/movies/movies-4.png" alt="slide-image">
+                        <img class="slide-image" src="images/movies/movies-5.png" alt="slide-image">
+                    </div>
+                    <div class="picture-select">
+                        <div data-id="0" class="select-button checked"></div>
+                        <div data-id="1" class="select-button"></div>
+                        <div data-id="2" class="select-button"></div>
+                        <div data-id="3" class="select-button"></div>
+                        <div data-id="4" class="select-button"></div>
+                    </div>
+                </div>
+
+                <div class="left-column">
+                        <h4 class="title-text">About</h4>
+                    <p>Made primarily as a test app to practice working with Angular, as well as 
+                        interacting with third party api-s and developing my own back-end with Node express.
+                        Uses PostgreSQL database for storing users, and their wishlisted movies. <br>
+                        Upon registering the user can view a list of TMDB-s top rated movies and add 
+                        their selected movies to their own personal wishlist.
+                    </p>
+                </div>
+
+                <div class="right-column">
+                    <h4 class="title-text">Technologies</h4>
+                    <div id="project-skills">
+                        <ul>
+                            <li>Angular</li>
+                            <li>Javascript/Typescript</li>
+                            <li>Html/Css</li>
+                            <li>Node Express</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="link-wrapper">
+                        <a id="video" href="https://youtu.be/6xEAaOjCIP4" target="_blank">Video</a>
+                        <a id="page">Page</a>
+                        <a id="code" href="https://github.com/TristanRedrose/Inkwell" target="_blank">Code</a>
+                    </div>
+                </div>
+            </div>
+            `;    
+        }
+        container.className = "modal-container active";
+        imageSlider();
         const closeButton = container.querySelector("#close-button");
         closeButton.addEventListener('click', closeModal)
         modal.addEventListener('click', closeModal)
