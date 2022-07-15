@@ -53,9 +53,18 @@ modalButtons.forEach(button => {
                     </div>
 
                     <div class="link-wrapper">
-                        <a id="video" href="https://youtu.be/6xEAaOjCIP4" target="_blank">Video</a>
-                        <a id="page">Page</a>
-                        <a id="code" href="https://github.com/TristanRedrose/Inkwell" target="_blank">Code</a>
+                        <div class="button-area">
+                            <img class="link-icon" src="images/icons/youtube.png" alt="slide-image">
+                            <a id="video" href="https://youtu.be/6xEAaOjCIP4" target="_blank">Video</a>
+                        </div>
+                        <div class="button-area">
+                            <img class="link-icon" src="images/icons/Inkwell (2).png" id="inkwell-icon" alt="slide-image">
+                            <a id="page">Page</a>
+                        </div>
+                        <div class="button-area">
+                            <img class="link-icon" src="images/icons/github.png" alt="slide-image">
+                            <a id="code" href="https://github.com/TristanRedrose/Inkwell" target="_blank">Code</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -107,9 +116,18 @@ modalButtons.forEach(button => {
                     </div>
 
                     <div class="link-wrapper">
-                        <a id="video" href="https://youtu.be/6xEAaOjCIP4" target="_blank">Video</a>
-                        <a id="page">Page</a>
-                        <a id="code" href="https://github.com/TristanRedrose/Inkwell" target="_blank">Code</a>
+                        <div class="button-area">
+                            <img class="link-icon" src="images/icons/youtube.png" alt="slide-image">
+                            <a id="video" href="https://youtu.be/6xEAaOjCIP4" target="_blank">Video</a>
+                        </div>
+                        <div class="button-area">
+                            <img class="link-icon" src="images/icons/MyFav.png" id="inkwell-icon" alt="slide-image">
+                            <a id="page">Page</a>
+                        </div>
+                        <div class="button-area">
+                            <img class="link-icon" src="images/icons/github.png" alt="slide-image">
+                            <a id="code" href="https://github.com/TristanRedrose/Inkwell" target="_blank">Code</a>
+                        </div>
                     </div>
                 </div>
             </div>

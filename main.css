@@ -368,6 +368,23 @@ h6 {font-size: 16px}
     justify-content: space-between;
 }
 
+.button-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-icon {
+    height: 28px;
+    width: 28px;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+#inkwell-icon {
+    border-radius: 8px;
+}
+
 #video, #page, #code {
     box-sizing: border-box;
     border-radius: 12px;
