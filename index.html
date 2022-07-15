@@ -17,16 +17,28 @@
             <div class="nav-container">
                 <h5>Ivan Pavić</h5>
                 <ul id="navigation">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li><img class="theme-image" id="theme-selector" src="images/night-mode.png" alt="night-mode"></li>
                 </ul>
             </div>
         </nav>
 
-        <section class="s2">
+        <nav class="sticky-navbar">
+            <div class="container">
+                <ul id="navigation">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><img class="theme-image" id="theme-selector" src="images/night-mode.png" alt="night-mode"></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="s2" id="about">
             <div class="main-container">
                 <div class="welcome-wrapper">
                     <h4>Welcome, my name is <span class="color-text1">Ivan Pavić</span><br>and i am a budding web developer</h4>
@@ -36,7 +48,7 @@
             </div>
         </section>
 
-        <section class="s1">
+        <section class="s1" id="education">
             <div class="main-container">
                 <h3 class="title-text">Education and certificates</h4>
                 <div class="cert-wrapper">
@@ -101,11 +113,11 @@
             </div>
         </section>
 
-        <section class="s1">
+        <section class="s1" id="projects">
             <div class="main-container">
                 <h3 class="title-text">Featured projects</h3>
                 <div class="cert-wrapper">
-                    <div class="cert-box">
+                    <div class="project-box">
                         <div class="image-box">
                             <img class="ed-img" src="C:\Users\Ivan\Desktop\Portfolio\images\Screenshot_57.png" alt="school">
                         </div>
@@ -118,7 +130,7 @@
                         </div>
                     </div>
 
-                    <div class="cert-box">
+                    <div class="project-box">
                         <div class="image-box">
                             <img class="ed-img" src="C:\Users\Ivan\Desktop\Portfolio\images\Screenshot_55.png" alt="school">
                         </div>
@@ -134,7 +146,7 @@
             </div>
         </section>
 
-        <section class="s2">
+        <section class="s2" id="contact">
             <div class="main-container">
                 <h3 class="title-text">Contact</h3>
                 <div class="contact-wrapper">
@@ -158,5 +170,6 @@
     </div>
     <script type="text/javascript" src="theme.js"></script>
     <script type="text/javascript" src="modals.js"></script>
+    <script type="text/javascript" src="navbar.js"></script>
 </body>
 </html>

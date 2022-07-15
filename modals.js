@@ -51,20 +51,20 @@ modalButtons.forEach(button => {
                             <li>Html/Css</li>
                         </ul>
                     </div>
+                </div>
 
-                    <div class="link-wrapper">
-                        <div class="button-area">
-                            <img class="link-icon" src="images/icons/youtube.png" alt="slide-image">
-                            <a id="video" href="https://youtu.be/6xEAaOjCIP4" target="_blank">Video</a>
-                        </div>
-                        <div class="button-area">
-                            <img class="link-icon" src="images/icons/Inkwell (2).png" id="inkwell-icon" alt="slide-image">
-                            <a id="page">Page</a>
-                        </div>
-                        <div class="button-area">
-                            <img class="link-icon" src="images/icons/github.png" alt="slide-image">
-                            <a id="code" href="https://github.com/TristanRedrose/Inkwell" target="_blank">Code</a>
-                        </div>
+                <div class="link-wrapper">
+                    <div class="button-area">
+                        <img class="link-icon" src="images/icons/youtube.png" alt="slide-image">
+                        <a id="video" href="https://youtu.be/6xEAaOjCIP4" target="_blank">Video</a>
+                    </div>
+                    <div class="button-area">
+                        <img class="link-icon" src="images/icons/Inkwell (2).png" id="inkwell-icon" alt="slide-image">
+                        <a id="page">Page</a>
+                    </div>
+                    <div class="button-area">
+                        <img class="link-icon" src="images/icons/github.png" alt="slide-image">
+                        <a id="code" href="https://github.com/TristanRedrose/Inkwell" target="_blank">Code</a>
                     </div>
                 </div>
             </div>
@@ -114,20 +114,20 @@ modalButtons.forEach(button => {
                             <li>PostgreSQL</li>
                         </ul>
                     </div>
+                </div>
 
-                    <div class="link-wrapper">
-                        <div class="button-area">
-                            <img class="link-icon" src="images/icons/youtube.png" alt="slide-image">
-                            <a id="video" href="https://youtu.be/6xEAaOjCIP4" target="_blank">Video</a>
-                        </div>
-                        <div class="button-area">
-                            <img class="link-icon" src="images/icons/MyFav.png" id="inkwell-icon" alt="slide-image">
-                            <a id="page">Page</a>
-                        </div>
-                        <div class="button-area">
-                            <img class="link-icon" src="images/icons/github.png" alt="slide-image">
-                            <a id="code" href="https://github.com/TristanRedrose/Inkwell" target="_blank">Code</a>
-                        </div>
+                <div class="link-wrapper">
+                    <div class="button-area">
+                        <img class="link-icon" src="images/icons/youtube.png" alt="slide-image">
+                        <a id="video" href="https://youtu.be/6xEAaOjCIP4" target="_blank">Video</a>
+                    </div>
+                    <div class="button-area">
+                        <img class="link-icon" src="images/icons/MyFav.png" id="inkwell-icon" alt="slide-image">
+                        <a id="page">Page</a>
+                    </div>
+                    <div class="button-area">
+                        <img class="link-icon" src="images/icons/github.png" alt="slide-image">
+                        <a id="code" href="https://github.com/TristanRedrose/Inkwell" target="_blank">Code</a>
                     </div>
                 </div>
             </div>
