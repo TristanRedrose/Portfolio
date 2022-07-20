@@ -6,10 +6,6 @@
     --secondaryText: #4b5156;
 
     --borderColor: #7e7676;
-
-    --buttonColor: black;
-
-    --stickyNavColor: #192734;
 }
 
 .night-theme {
@@ -23,8 +19,6 @@
     --borderColor: #c1c1c1;
 
     --buttonColor: #17a2b8;
-
-    --stickyNavColor: #fff;
 }
 
 body {
@@ -103,6 +97,10 @@ h6 {font-size: 16px}
     margin-left: 5px;
 }
 
+.language {
+    cursor: pointer;
+}
+
 .sticky-navbar {
     position: fixed;
     top: 1%;
@@ -110,7 +108,7 @@ h6 {font-size: 16px}
     transform: translate(-1%, -1%);
     border:1px solid var(--borderColor);
     border-radius: 8px;
-    background-color: var(--mainColor);
+    background-color: var(--secondaryColor);
     display: none;
 }
 
@@ -178,7 +176,12 @@ h6 {font-size: 16px}
     box-sizing: border-box;
 }
 
+.project-box{
+    overflow: hidden;
+}
+
 .image-box {
+    box-sizing: border-box;
     width: 100%;
     height: 150px;
     overflow: hidden;

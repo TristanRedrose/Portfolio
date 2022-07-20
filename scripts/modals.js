@@ -5,31 +5,11 @@ const container = document.querySelector(".modal-container");
 
 modalButtons.forEach(button => {
     button.addEventListener('click', function(){
-        if (button.dataset.id === "inkwell") {
-            modal.className = "modal active";
-            container.innerHTML = `
-            <div id="close-button">Return...</div>
-            <h3 class="title-text">Inkwell</h3>
-            <div class="modal-wrapper">
-                <div class="slider">
-                    <div class="project-images">
-                        <img class="slide-image active" src="images/inkwell/Inkwell-1.png" alt="slide-image">
-                        <img class="slide-image" src="images/inkwell/Inkwell-2.png" alt="slide-image">
-                        <img class="slide-image" src="images/inkwell/Inkwell-3.png" alt="slide-image">
-                        <img class="slide-image" src="images/inkwell/Inkwell-4.png" alt="slide-image">
-                        <img class="slide-image" src="images/inkwell/Inkwell-5.png" alt="slide-image">
-                    </div>
-                    <div class="picture-select">
-                        <div data-id="0" class="select-button checked"></div>
-                        <div data-id="1" class="select-button"></div>
-                        <div data-id="2" class="select-button"></div>
-                        <div data-id="3" class="select-button"></div>
-                        <div data-id="4" class="select-button"></div>
-                    </div>
-                </div>
 
+        if (button.dataset.id === "inkwell") {
+            let inkwellModal = `
                 <div class="left-column">
-                        <h4 class="title-text">About</h4>
+                    <h4 class="title-text">About</h4>
                     <p>Inkwell is a website that provides users with a fast and simple way to set up their personal blog. 
                         Upon registering, the user can select "My blog" in the navbar which will take the user to the blog creation page, 
                         or if the user already has a blog, he will be taken to his blog page. Upon creating their blog, the user now has 
@@ -52,6 +32,61 @@ modalButtons.forEach(button => {
                         </ul>
                     </div>
                 </div>
+            `;
+
+            if (window.location.hash === "#hr") {
+
+                inkwellModal = `
+                    <div class="left-column">
+                    <h4 class="title-text">Detalji</h4>
+                    <p>Web stranica koja omogućuje korisnicima brz i jednostavan način za uspostavu vlastitog bloga.
+                        Nakon registracije, korisnik može izabrati "My blog" u navbaru koji će ga odvesti do stranice za kreaciju bloga, 
+                        ili ako korisnik već ima blog, do svojeg bloga. Nakon kreacije bloga, korisniku je omogućen 
+                        pristup "New post" gumbu koji će ga odvesti do stranice za kreaciju posta. Novi postovi nasljeđuju kategoriju
+                        bloga kao svoju osnovnu kategoriju, ali korisnik može izabrati drugaćiju kategoriju za svaki post.<br>
+                        Registrirani korisnik može ostaviti komentar ispod postova, ima pristup edit/delete modalu za svoje komentare,
+                        te ima pristup edit modalu za promjenu profila. Neregistrirani korisnici mogu vidjeti kreirane blogove i postove,
+                        ali ne mogu ostavljati komentare.
+                    </p>
+                    </div>
+        
+                    <div class="right-column">
+                        <h4 class="title-text">Tehnologije</h4>
+                        <div id="project-skills">
+                            <ul>
+                                <li>Python</li>
+                                <li>Django</li>
+                                <li>Javascript</li>
+                                <li>Html/Css</li>
+                            </ul>
+                        </div>
+                    </div>
+                `;
+            }
+
+            modal.className = "modal active";
+            container.innerHTML = `
+            <div id="close-button">Return...</div>
+            <h3 class="title-text">Inkwell</h3>
+            <div class="modal-wrapper">
+                <div class="slider">
+                    <div class="project-images">
+                        <img class="slide-image active" src="images/inkwell/Inkwell-1.png" alt="slide-image">
+                        <img class="slide-image" src="images/inkwell/Inkwell-2.png" alt="slide-image">
+                        <img class="slide-image" src="images/inkwell/Inkwell-3.png" alt="slide-image">
+                        <img class="slide-image" src="images/inkwell/Inkwell-4.png" alt="slide-image">
+                        <img class="slide-image" src="images/inkwell/Inkwell-5.png" alt="slide-image">
+                    </div>
+                    <div class="picture-select">
+                        <div data-id="0" class="select-button checked"></div>
+                        <div data-id="1" class="select-button"></div>
+                        <div data-id="2" class="select-button"></div>
+                        <div data-id="3" class="select-button"></div>
+                        <div data-id="4" class="select-button"></div>
+                    </div>
+                </div>
+
+                ${inkwellModal}
 
                 <div class="link-wrapper">
                     <div class="button-area">
@@ -70,7 +105,61 @@ modalButtons.forEach(button => {
             </div>
             `;    
         }
+
         if (button.dataset.id === "movies") {
+            let moviesModal = `
+                <div class="left-column">
+                <h4 class="title-text">About</h4>
+                <p>Made primarily as a test app to practice working with Angular, as well as 
+                    interacting with third party api-s and developing my own back-end with Node express.
+                    Uses PostgreSQL database for storing users, and their wishlisted movies. <br>
+                    Upon registering the user can view a list of TMDB-s top rated movies and add 
+                    their selected movies to their own personal wishlist.
+                </p>
+                </div>
+
+                <div class="right-column">
+                    <h4 class="title-text">Technologies</h4>
+                    <div id="project-skills">
+                        <ul>
+                            <li>Angular</li>
+                            <li>Javascript/Typescript</li>
+                            <li>Html/Css</li>
+                            <li>Node Express</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </div>
+                </div>
+            `;
+
+            if (window.location.hash === "#hr") {
+
+                moviesModal = `
+                    <div class="left-column">
+                    <h4 class="title-text">Detalji</h4>
+                    <p>Napravljena primarno kao testna aplikacija prilikom učenja rada u Angularu, kao i interakcija
+                        s tuđim API-evima te kreiranju vlastitog back-enda sa Node expressom.
+                        Koristi PostgreSql kao bazu za pohranu korisnika i njihove liste želja. <br>
+                        Nakon registracije korisnik može prelistati TMDB-ovu listu najbolje ocijenjenih filmova te
+                        dodati izabrane filmove na svoju listu želja.
+                    </p>
+                    </div>
+        
+                    <div class="right-column">
+                        <h4 class="title-text">Tehnologije</h4>
+                        <div id="project-skills">
+                            <ul>
+                                <li>Angular</li>
+                                <li>Javascript/Typescript</li>
+                                <li>Html/Css</li>
+                                <li>Node Express</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                `;
+            }
+
             modal.className = "modal active";
             container.innerHTML = `
             <div id="close-button">Return...</div>
@@ -93,28 +182,7 @@ modalButtons.forEach(button => {
                     </div>
                 </div>
 
-                <div class="left-column">
-                        <h4 class="title-text">About</h4>
-                    <p>Made primarily as a test app to practice working with Angular, as well as 
-                        interacting with third party api-s and developing my own back-end with Node express.
-                        Uses PostgreSQL database for storing users, and their wishlisted movies. <br>
-                        Upon registering the user can view a list of TMDB-s top rated movies and add 
-                        their selected movies to their own personal wishlist.
-                    </p>
-                </div>
-
-                <div class="right-column">
-                    <h4 class="title-text">Technologies</h4>
-                    <div id="project-skills">
-                        <ul>
-                            <li>Angular</li>
-                            <li>Javascript/Typescript</li>
-                            <li>Html/Css</li>
-                            <li>Node Express</li>
-                            <li>PostgreSQL</li>
-                        </ul>
-                    </div>
-                </div>
+                ${ moviesModal }
 
                 <div class="link-wrapper">
                     <div class="button-area">
