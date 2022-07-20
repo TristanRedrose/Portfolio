@@ -86,12 +86,12 @@ h6 {font-size: 16px}
     align-items: center;
 }
 
-#navigation {
+#navigation, #navigation-2 {
     margin: 0;
     padding: 10px;
 }
 
-#navigation li {
+#navigation li, #navigation-2 li {
     display: inline-block;
     margin-right: 5px;
     margin-left: 5px;
@@ -110,10 +110,7 @@ h6 {font-size: 16px}
     border-radius: 8px;
     background-color: var(--secondaryColor);
     display: none;
-}
-
-#side-navigation li {
-    margin: 10px 0px;
+    z-index: 10;
 }
 
 .theme-image {

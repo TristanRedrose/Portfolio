@@ -14,7 +14,11 @@ let language = {
         proj1:"A website that provides users with a fast and simple way to set up their personal blog.",
         proj2:"A web application that allows users to browse popular movies and add them to their personal wishlist.",
         modal_button:"See more...",
-        contact:"Contact"
+        contact:"Contact",
+        project_link:"Projects",
+        education_link:"Education",
+        contact_link:"Contact",
+        top_link:"Back"
     },
 
     hr: {
@@ -32,7 +36,11 @@ let language = {
         proj1:"Stranica koja omogučuje korisnicima brz i jednostavan način kreiranja vlastitog bloga.",
         proj2:"Web aplikacija za pregled liste popularnih filmove i dodavanje filmova na svoju listu želja",
         modal_button:"Vidi više...",
-        contact:"Kontakt"
+        contact:"Kontakt",
+        project_link:"Projekti",
+        education_link:"Obrazovanje",
+        contact_link:"Kontakt",
+        top_link:"Nazad"
     }
 }
 
@@ -52,7 +60,7 @@ if (window.location.hash === "#hr") {
     proj.innerText = language.hr.projects;
     proj1.innerText = language.hr.proj1;
     proj2.innerText = language.hr.proj2;
-    contact_title.innerText = language.hr.contact
+    contact_title.innerText = language.hr.contact;
 
     const modalButtons = document.querySelectorAll(".modal-link");
     modalButtons.forEach(element => {
@@ -61,7 +69,24 @@ if (window.location.hash === "#hr") {
 
     languageButtons.forEach(button => {
         button.innerText = "eng";
-    })
+    });
+
+    const projectLinks = document.querySelectorAll(".project-link");
+    projectLinks.forEach(link => {
+        link.innerText = language.hr.project_link;
+    });
+
+    const educationLinks = document.querySelectorAll(".education-link");
+    educationLinks.forEach(link => {
+        link.innerText = language.hr.education_link;
+    });
+
+    const contactLinks = document.querySelectorAll(".contact-link");
+    contactLinks.forEach(link => {
+        link.innerText = language.hr.contact_link;
+    });
+
+    topLink.innerText = language.hr.top_link;
 }
 
 languageButtons.forEach(button => {
