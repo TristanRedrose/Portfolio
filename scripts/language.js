@@ -40,64 +40,71 @@ let language = {
         project_link:"Projekti",
         education_link:"Obrazovanje",
         contact_link:"Kontakt",
-        top_link:"Nazad"
+        top_link:"Natrag"
     }
 }
 
 const languageButtons = document.querySelectorAll(".language");
 
-if (window.location.hash === "#hr") {
-    welcome1.innerText = language.hr.welcome1;
-    welcome2.innerText = language.hr.welcome2;
-    educ.innerText = language.hr.education;
-    edu_text1.innerText = language.hr.edu_text1;
+function changeLanguage() {
+    let lng = language.eng
+    if (window.location.hash === "#hr") {
+        lng = language.hr
+    }
+    welcome1.innerText = lng.welcome1;
+    welcome2.innerText = lng.welcome2;
+    educ.innerText = lng.education;
+    edu_text1.innerText = lng.edu_text1;
     edu_text2.innerText = language.hr.edu_text2;
-    edu_text3.innerText = language.hr.edu_text3;
-    experience.innerText = language.hr.experience;
-    exp_text1.innerText = language.hr.exp_text1;
-    exp_colortext.innerText = language.hr.exp_colortext;
-    exp_text2.innerText = language.hr.exp_text2;
-    proj.innerText = language.hr.projects;
-    proj1.innerText = language.hr.proj1;
-    proj2.innerText = language.hr.proj2;
-    contact_title.innerText = language.hr.contact;
+    edu_text3.innerText = lng.edu_text3;
+    experience.innerText = lng.experience;
+    exp_text1.innerText = lng.exp_text1;
+    exp_colortext.innerText = lng.exp_colortext;
+    exp_text2.innerText = lng.exp_text2;
+    proj.innerText = lng.projects;
+    proj1.innerText = lng.proj1;
+    proj2.innerText = lng.proj2;
+    contact_title.innerText = lng.contact;
 
     const modalButtons = document.querySelectorAll(".modal-link");
     modalButtons.forEach(element => {
-        element.innerText = language.hr.modal_button;
-    });
-
-    languageButtons.forEach(button => {
-        button.innerText = "eng";
+        element.innerText = lng.modal_button;
     });
 
     const projectLinks = document.querySelectorAll(".project-link");
     projectLinks.forEach(link => {
-        link.innerText = language.hr.project_link;
+        link.innerText = lng.project_link;
     });
 
     const educationLinks = document.querySelectorAll(".education-link");
     educationLinks.forEach(link => {
-        link.innerText = language.hr.education_link;
+        link.innerText = lng.education_link;
     });
 
     const contactLinks = document.querySelectorAll(".contact-link");
     contactLinks.forEach(link => {
-        link.innerText = language.hr.contact_link;
+        link.innerText = lng.contact_link;
     });
 
-    topLink.innerText = language.hr.top_link;
-}
+    topLink.innerText = lng.top_link;
+};
+
 
 languageButtons.forEach(button => {
     button.addEventListener('click', function(){
-        if (button.innerText === "hr") {
+        if (button.innerText === "eng") {
             window.location.hash = "#hr";
-            location.reload();
+            languageButtons.forEach(button => {
+                button.innerText = "hr";
+            });
+            changeLanguage();
         } else {
             window.location.hash = "#eng";
-            location.reload();
+            languageButtons.forEach(button => {
+                button.innerText = "eng";
+            });
+            changeLanguage();
         }
     })
-})
+});
 
