@@ -100,6 +100,10 @@ h6 {font-size: 16px}
     margin-left: 5px;
 }
 
+.education-link, .project-link, .contact-link, #topLink {
+    cursor: pointer;
+}
+
 .language {
     cursor: pointer;
 }
