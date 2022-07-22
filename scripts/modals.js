@@ -32,9 +32,24 @@ modalButtons.forEach(button => {
                         </ul>
                     </div>
                 </div>
+
+                <div class="link-wrapper">
+                    <div class="button-area">
+                        <img class="link-icon" src="images/icons/youtube.png" alt="slide-image">
+                        <a id="video" href="https://youtu.be/6xEAaOjCIP4" target="_blank">Video</a>
+                    </div>
+                    <div class="button-area">
+                        <img class="link-icon" src="images/icons/Inkwell (2).png" id="inkwell-icon" alt="slide-image">
+                        <a id="page">Page</a>
+                    </div>
+                    <div class="button-area">
+                        <img class="link-icon" src="images/icons/github.png" alt="slide-image">
+                        <a id="code" href="https://github.com/TristanRedrose/Inkwell" target="_blank">Code</a>
+                    </div>
+                </div>
             `;
 
-            if (window.location.hash === "#hr") {
+            if (window.location.hash === "#hr" || localStorage.getItem('language') === "hrvatski") {
 
                 inkwellModal = `
                     <div class="left-column">
@@ -59,6 +74,21 @@ modalButtons.forEach(button => {
                                 <li>Javascript</li>
                                 <li>Html/Css</li>
                             </ul>
+                        </div>
+                    </div>
+
+                    <div class="link-wrapper">
+                        <div class="button-area">
+                            <img class="link-icon" src="images/icons/youtube.png" alt="slide-image">
+                            <a id="video" href="https://youtu.be/6xEAaOjCIP4" target="_blank">Video</a>
+                        </div>
+                        <div class="button-area">
+                            <img class="link-icon" src="images/icons/Inkwell (2).png" id="inkwell-icon" alt="slide-image">
+                            <a id="page">Stranica</a>
+                        </div>
+                        <div class="button-area">
+                            <img class="link-icon" src="images/icons/github.png" alt="slide-image">
+                            <a id="code" href="https://github.com/TristanRedrose/Inkwell" target="_blank">Kod</a>
                         </div>
                     </div>
                 `;
@@ -87,21 +117,6 @@ modalButtons.forEach(button => {
                 </div>
 
                 ${inkwellModal}
-
-                <div class="link-wrapper">
-                    <div class="button-area">
-                        <img class="link-icon" src="images/icons/youtube.png" alt="slide-image">
-                        <a id="video" href="https://youtu.be/6xEAaOjCIP4" target="_blank">Video</a>
-                    </div>
-                    <div class="button-area">
-                        <img class="link-icon" src="images/icons/Inkwell (2).png" id="inkwell-icon" alt="slide-image">
-                        <a id="page">Page</a>
-                    </div>
-                    <div class="button-area">
-                        <img class="link-icon" src="images/icons/github.png" alt="slide-image">
-                        <a id="code" href="https://github.com/TristanRedrose/Inkwell" target="_blank">Code</a>
-                    </div>
-                </div>
             </div>
             `;    
         }
@@ -130,16 +145,31 @@ modalButtons.forEach(button => {
                         </ul>
                     </div>
                 </div>
+
+                <div class="link-wrapper">
+                    <div class="button-area">
+                        <img class="link-icon" src="images/icons/youtube.png" alt="slide-image">
+                        <a id="video" href="https://youtu.be/6xEAaOjCIP4" target="_blank">Video</a>
+                    </div>
+                    <div class="button-area">
+                        <img class="link-icon" src="images/icons/MyFav.png" id="inkwell-icon" alt="slide-image">
+                        <a id="page">Page</a>
+                    </div>
+                    <div class="button-area">
+                        <img class="link-icon" src="images/icons/github.png" alt="slide-image">
+                        <a id="code" href="https://github.com/TristanRedrose/Inkwell" target="_blank">Code</a>
+                    </div>
+                </div>
             `;
 
-            if (window.location.hash === "#hr") {
+            if (window.location.hash === "#hr" || localStorage.getItem('language') === "hrvatski") {
 
                 moviesModal = `
                     <div class="left-column">
                     <h4 class="title-text">Detalji</h4>
                     <p>Napravljena primarno kao testna aplikacija prilikom učenja rada u Angularu, kao i interakcija
                         s tuđim API-evima te kreiranju vlastitog back-enda sa Node expressom.
-                        Koristi PostgreSql kao bazu za pohranu korisnika i njihove liste želja. <br>
+                        Koristi PostgreSQL kao bazu za pohranu korisnika i njihove liste želja. <br>
                         Nakon registracije korisnik može prelistati TMDB-ovu listu najbolje ocijenjenih filmova te
                         dodati izabrane filmove na svoju listu želja.
                     </p>
@@ -155,6 +185,21 @@ modalButtons.forEach(button => {
                                 <li>Node Express</li>
                                 <li>PostgreSQL</li>
                             </ul>
+                        </div>
+                    </div>
+
+                    <div class="link-wrapper">
+                        <div class="button-area">
+                            <img class="link-icon" src="images/icons/youtube.png" alt="slide-image">
+                            <a id="video" href="https://youtu.be/6xEAaOjCIP4" target="_blank">Video</a>
+                        </div>
+                        <div class="button-area">
+                            <img class="link-icon" src="images/icons/MyFav.png" id="inkwell-icon" alt="slide-image">
+                            <a id="page">Stranica</a>
+                        </div>
+                        <div class="button-area">
+                            <img class="link-icon" src="images/icons/github.png" alt="slide-image">
+                            <a id="code" href="https://github.com/TristanRedrose/Inkwell" target="_blank">Kod</a>
                         </div>
                     </div>
                 `;
@@ -183,21 +228,6 @@ modalButtons.forEach(button => {
                 </div>
 
                 ${ moviesModal }
-
-                <div class="link-wrapper">
-                    <div class="button-area">
-                        <img class="link-icon" src="images/icons/youtube.png" alt="slide-image">
-                        <a id="video" href="https://youtu.be/6xEAaOjCIP4" target="_blank">Video</a>
-                    </div>
-                    <div class="button-area">
-                        <img class="link-icon" src="images/icons/MyFav.png" id="inkwell-icon" alt="slide-image">
-                        <a id="page">Page</a>
-                    </div>
-                    <div class="button-area">
-                        <img class="link-icon" src="images/icons/github.png" alt="slide-image">
-                        <a id="code" href="https://github.com/TristanRedrose/Inkwell" target="_blank">Code</a>
-                    </div>
-                </div>
             </div>
             `;    
         }

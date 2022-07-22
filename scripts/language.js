@@ -47,10 +47,22 @@ let language = {
 const languageButtons = document.querySelectorAll(".language");
 
 function changeLanguage() {
-    let lng = language.eng
-    if (window.location.hash === "#hr") {
+
+    let languageSetting = localStorage.getItem("language");
+    let lng = language.eng;
+
+    if (window.location.hash === "#hr" || languageSetting === "hrvatski") {
         lng = language.hr
-    }
+
+        languageButtons.forEach(button => {
+            button.innerText = "hr";
+        });
+    } else {
+        languageButtons.forEach(button => {
+            button.innerText = "eng";
+        })
+    };
+
     welcome1.innerText = lng.welcome1;
     welcome2.innerText = lng.welcome2;
     educ.innerText = lng.education;
@@ -89,22 +101,25 @@ function changeLanguage() {
     topLink.innerText = lng.top_link;
 };
 
-
-languageButtons.forEach(button => {
-    button.addEventListener('click', function(){
-        if (button.innerText === "eng") {
-            window.location.hash = "#hr";
-            languageButtons.forEach(button => {
-                button.innerText = "hr";
-            });
-            changeLanguage();
-        } else {
-            window.location.hash = "#eng";
-            languageButtons.forEach(button => {
-                button.innerText = "eng";
-            });
-            changeLanguage();
-        }
+function setLanguage() {
+    changeLanguage();
+    languageButtons.forEach(button => {
+        button.addEventListener('click', function(){
+            if (button.innerText === "eng") {
+                window.location.hash = "#hr";
+                localStorage.setItem("language", "hrvatski");
+                changeLanguage();
+            } else {
+                window.location.hash = "#eng";
+                localStorage.setItem("language", "english");
+                changeLanguage();
+            }
+        })
     })
-});
+};
+
+setLanguage();
+
+
+
 
