@@ -40,7 +40,7 @@ modalButtons.forEach(button => {
                     </div>
                     <div class="button-area">
                         <img class="link-icon" src="images/icons/Inkwell (2).png" id="inkwell-icon" alt="slide-image">
-                        <a id="page">Page</a>
+                        <a id="page" href="http://ink-well.duckdns.org" target="_blank">Page</a>
                     </div>
                     <div class="button-area">
                         <img class="link-icon" src="images/icons/github.png" alt="slide-image">
@@ -84,7 +84,7 @@ modalButtons.forEach(button => {
                         </div>
                         <div class="button-area">
                             <img class="link-icon" src="images/icons/Inkwell (2).png" id="inkwell-icon" alt="slide-image">
-                            <a id="page">Stranica</a>
+                            <a id="page" href="http://ink-well.duckdns.org" target="_blank">Stranica</a>
                         </div>
                         <div class="button-area">
                             <img class="link-icon" src="images/icons/github.png" alt="slide-image">
@@ -153,7 +153,7 @@ modalButtons.forEach(button => {
                     </div>
                     <div class="button-area">
                         <img class="link-icon" src="images/icons/MyFav.png" id="inkwell-icon" alt="slide-image">
-                        <a id="page">Page</a>
+                        <a id="page" href="http://myfavmovies.duckdns.org" target="_blank">Page</a>
                     </div>
                     <div class="button-area">
                         <img class="link-icon" src="images/icons/github.png" alt="slide-image">
@@ -195,7 +195,7 @@ modalButtons.forEach(button => {
                         </div>
                         <div class="button-area">
                             <img class="link-icon" src="images/icons/MyFav.png" id="inkwell-icon" alt="slide-image">
-                            <a id="page">Stranica</a>
+                            <a id="page" href="http://myfavmovies.duckdns.org" target="_blank">Stranica</a>
                         </div>
                         <div class="button-area">
                             <img class="link-icon" src="images/icons/github.png" alt="slide-image">

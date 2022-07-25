@@ -6,6 +6,7 @@ let language = {
         edu_text1: "Natural sciences and mathematics with a greater focus on mathematics.",
         edu_text2: "An introduction to the intellectual enterprises of computer science and the art of programming.",
         edu_text3: "Design and implementation of web apps with Python, JavaScript, and SQL using frameworks like Django, React, and Bootstrap.",
+        cv_text:"Download CV",
         experience:"Experience",
         exp_text1:"Some of the ",
         exp_colortext:"technologies ",
@@ -28,6 +29,7 @@ let language = {
         edu_text1: "Prirodne znanosti i matematika, s većim fokusom na matematiku.",
         edu_text2: "Uvod u intelektualni poduhvat informatičke znanosti i umijeće programiranja.",
         edu_text3: "Dizajn i implementacija web aplikacija koristeći Python, JavaScript, i SQL pomoću frameworkova kao Django, React, i Bootstrap.",
+        cv_text:"Preuzmi CV",
         experience:"Iskustvo",
         exp_text1:"Neke od ",
         exp_colortext:"tehnologija ",
@@ -67,8 +69,9 @@ function changeLanguage() {
     welcome2.innerText = lng.welcome2;
     educ.innerText = lng.education;
     edu_text1.innerText = lng.edu_text1;
-    edu_text2.innerText = language.hr.edu_text2;
+    edu_text2.innerText = lng.edu_text2;
     edu_text3.innerText = lng.edu_text3;
+    cv_text.innerText = lng.cv_text,
     experience.innerText = lng.experience;
     exp_text1.innerText = lng.exp_text1;
     exp_colortext.innerText = lng.exp_colortext;
