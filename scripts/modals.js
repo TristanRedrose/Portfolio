@@ -149,7 +149,7 @@ modalButtons.forEach(button => {
                 <div class="link-wrapper">
                     <div class="button-area">
                         <img class="link-icon" src="images/icons/youtube.png" alt="slide-image">
-                        <a id="video" href="https://youtu.be/6xEAaOjCIP4" target="_blank">Video</a>
+                        <a id="video" href="https://www.youtube.com/watch?v=6HrO2Zpf7_M" target="_blank">Video</a>
                     </div>
                     <div class="button-area">
                         <img class="link-icon" src="images/icons/MyFav.png" id="inkwell-icon" alt="slide-image">
@@ -157,7 +157,7 @@ modalButtons.forEach(button => {
                     </div>
                     <div class="button-area">
                         <img class="link-icon" src="images/icons/github.png" alt="slide-image">
-                        <a id="code" href="https://github.com/TristanRedrose/Inkwell" target="_blank">Code</a>
+                        <a id="code" href="https://github.com/TristanRedrose/MyFavMovies" target="_blank">Code</a>
                     </div>
                 </div>
             `;
@@ -191,7 +191,7 @@ modalButtons.forEach(button => {
                     <div class="link-wrapper">
                         <div class="button-area">
                             <img class="link-icon" src="images/icons/youtube.png" alt="slide-image">
-                            <a id="video" href="https://youtu.be/6xEAaOjCIP4" target="_blank">Video</a>
+                            <a id="video" href="https://www.youtube.com/watch?v=6HrO2Zpf7_M" target="_blank">Video</a>
                         </div>
                         <div class="button-area">
                             <img class="link-icon" src="images/icons/MyFav.png" id="inkwell-icon" alt="slide-image">
@@ -199,7 +199,7 @@ modalButtons.forEach(button => {
                         </div>
                         <div class="button-area">
                             <img class="link-icon" src="images/icons/github.png" alt="slide-image">
-                            <a id="code" href="https://github.com/TristanRedrose/Inkwell" target="_blank">Kod</a>
+                            <a id="code" href="https://github.com/TristanRedrose/MyFavMovies" target="_blank">Kod</a>
                         </div>
                     </div>
                 `;
