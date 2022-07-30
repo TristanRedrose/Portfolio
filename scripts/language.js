@@ -1,7 +1,7 @@
 let language = {
     eng: {
         welcome1: "Welcome, my name is ",
-        welcome2:"and i am a budding web developer",
+        welcome2:"creator of interactive web application.",
         education: "Education and certificates",
         edu_text1: "Natural sciences and mathematics with a greater focus on mathematics.",
         edu_text2: "An introduction to the intellectual enterprises of computer science and the art of programming.",
@@ -24,7 +24,7 @@ let language = {
 
     hr: {
         welcome1: "Pozdrav, moje ime je ",
-        welcome2: "web developer u razvoju.",
+        welcome2: "kreator interaktivnih web aplikacija.",
         education: "Obrazovanje i certifikati",
         edu_text1: "Prirodne znanosti i matematika, s većim fokusom na matematiku.",
         edu_text2: "Uvod u intelektualni poduhvat informatičke znanosti i umijeće programiranja.",
